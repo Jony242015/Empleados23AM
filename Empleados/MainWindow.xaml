@@ -1,0 +1,31 @@
+﻿<Window x:Class="Empleados23AM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Empleados"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="170*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="356*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Empleado" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="272" HorizontalContentAlignment="Center" RenderTransformOrigin="0.537,-0.05"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="64,46,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.467,-0.302"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Center" Height="30" Margin="0,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+        <Label Content="Apellido" HorizontalAlignment="Left" Margin="70,114,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Center" Height="30" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Grid.RowSpan="2"/>
+        <Label Content="Correo" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" FontSize="16" Grid.Row="1"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Center" Height="31" Margin="0,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="70,19,0,0" VerticalAlignment="Top" FontSize="16" Grid.Row="2"/>
+        <TextBox x:Name="txtFecha" HorizontalAlignment="Center" Height="30" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Grid.Row="2"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="71,82,0,0" VerticalAlignment="Top" FontSize="16" Grid.Row="2"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Center" Height="30" Margin="0,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Grid.Row="2"/>
+        <Button x:Name="BtnRead" Content="Ver" HorizontalAlignment="Left" Height="30" Margin="70,195,0,0" VerticalAlignment="Top" Width="272" FontSize="16" Background="#FF2ECAFF" Click="BtnRead_Click" Grid.Row="2"/>
+        <Button x:Name="BtnUpdate" Content="Editar" HorizontalAlignment="Left" Height="30" Margin="70,265,0,0" VerticalAlignment="Top" Width="272" FontSize="16" Background="#FFEEEB34" Click="BtnUpdate_Click" Grid.Row="2"/>
+        <Button x:Name="BtnAdd" Content="Agregar" HorizontalAlignment="Left" Height="30" Margin="70,230,0,0" VerticalAlignment="Top" Width="272" FontSize="16" Background="#FF24E842" Click="BtnAdd_Click" Grid.Row="2"/>
+        <Button x:Name="BtnDelete" Content="Eliminar" HorizontalAlignment="Left" Height="30" Margin="70,300,0,0" VerticalAlignment="Top" Width="272" FontSize="16" Background="#FFF43C3C" Click="BtnDelete_Click" Grid.Row="2"/>
+    </Grid>
+</Window>
