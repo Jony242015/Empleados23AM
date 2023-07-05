@@ -105,5 +105,14 @@ namespace Empleados23AM
                 MessageBox.Show("Modificación correcta");
             }
         }
+
+        private void BtnRestart_Click(object sender, RoutedEventArgs e)
+        {
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtCorreo.Clear();
+            txtFecha.Clear();
+            txtId.Clear();
+        }
     }
 }
