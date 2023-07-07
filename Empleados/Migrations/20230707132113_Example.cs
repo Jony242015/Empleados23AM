@@ -12,7 +12,7 @@ namespace Empleados23AM.Migrations
                 name: "Empleados",
                 columns: table => new
                 {
-                    PKEmpleado = table.Column<int>(type: "int", nullable: false)
+                    PkEmpleado = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     Apellido = table.Column<string>(type: "text", nullable: false),
@@ -21,7 +21,7 @@ namespace Empleados23AM.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Empleados", x => x.PKEmpleado);
+                    table.PrimaryKey("PK_Empleados", x => x.PkEmpleado);
                 });
         }
 

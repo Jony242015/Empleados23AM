@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Empleados23AM.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230705154427_Jonathan")]
-    partial class Jonathan
+    [Migration("20230707132113_Example")]
+    partial class Example
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace Empleados23AM.Migrations
 
             modelBuilder.Entity("Empleados.Entities.Empleado", b =>
                 {
-                    b.Property<int>("PKEmpleado")
+                    b.Property<int>("PkEmpleado")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
@@ -40,7 +40,7 @@ namespace Empleados23AM.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("PKEmpleado");
+                    b.HasKey("PkEmpleado");
 
                     b.ToTable("Empleados");
                 });

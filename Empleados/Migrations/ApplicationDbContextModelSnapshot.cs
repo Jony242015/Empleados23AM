@@ -19,7 +19,7 @@ namespace Empleados23AM.Migrations
 
             modelBuilder.Entity("Empleados.Entities.Empleado", b =>
                 {
-                    b.Property<int>("PKEmpleado")
+                    b.Property<int>("PkEmpleado")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
@@ -38,7 +38,7 @@ namespace Empleados23AM.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("PKEmpleado");
+                    b.HasKey("PkEmpleado");
 
                     b.ToTable("Empleados");
                 });

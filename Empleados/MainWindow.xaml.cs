@@ -53,11 +53,25 @@ namespace Empleados23AM
         {
             int Id = int.Parse(txtId.Text);
             Empleado empleado = services.Red(Id);
-            txtId.Text = empleado.PkEmpleado.ToString();
-            txtNombre.Text = empleado.Nombre.ToString();
-            txtApellido.Text = empleado.Apellido.ToString();
-            txtCorreo.Text = empleado.Correo.ToString();
-            txtFecha.Text = empleado.FechaRegistro.ToString();
+            if (empleado!= null)
+            {
+                txtId.Text = empleado.PkEmpleado.ToString();
+                txtNombre.Text = empleado.Nombre.ToString();
+                txtApellido.Text = empleado.Apellido.ToString();
+                txtCorreo.Text = empleado.Correo.ToString();
+                txtFecha.Text = empleado.FechaRegistro.ToString();
+            }
+            else
+            {
+                MessageBox.Show("registro no encontrado");
+                txtNombre.Clear();
+                txtApellido.Clear();
+                txtCorreo.Clear();
+                txtFecha.Clear();
+                txtId.Clear();
+
+            }
+          
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
